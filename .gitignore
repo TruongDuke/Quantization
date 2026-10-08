@@ -1,0 +1,14 @@
+# Môi trường
+.venv/
+__pycache__/
+.vscode/
+.DS_Store
+
+# Dữ liệu và file sinh ra khi chạy code (tạo lại được bằng cách chạy script)
+imagenette2-160/
+*.npy
+*.onnx
+*.onnx.data
+*.tflite
+*.zip
+3-deploy/benchmark_model
