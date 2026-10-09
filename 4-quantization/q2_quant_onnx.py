@@ -10,7 +10,7 @@ from onnxruntime.quantization.shape_inference import quant_pre_process
 quant_pre_process("resnet18_fp32.onnx","resnet18_prep.onnx")
 
 # Dynamic quantization
-quantize_dynamic("resnet18_prep.onnx", "resnet18_onnx_dynamic.onnx", weight_type=QuantType.QInt8)
+quantize_dynamic("resnet18_prep.onnx", "resnet18_onnx_dynamic.onnx", weight_type=QuantType.QInt8, per_channel=True)
 print("Dynamic quantization done.")
 
 # Static quantization

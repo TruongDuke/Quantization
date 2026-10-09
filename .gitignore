@@ -12,3 +12,4 @@ imagenette2-160/
 *.tflite
 *.zip
 3-deploy/benchmark_model
+huy-lab/
