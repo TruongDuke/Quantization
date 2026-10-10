@@ -52,7 +52,7 @@ Model gốc PyTorch đúng 64.7%.
 - SNR giảm từ khoảng 110 dB xuống còn 20–28 dB, nhưng model vẫn đoán giống bản gốc 85–96%.
 - Static nhanh nhất, ONNX static nhanh gấp 4 lần FP32. ONNX dynamic chỉ nhanh hơn khoảng 1.6 lần.
 - Có vài bản INT8 accuracy cao hơn model gốc. Đây chỉ là ngẫu nhiên, vì chỉ có 300 ảnh và chênh nhau khoảng 10 ảnh. Nên nhìn cột "giống model gốc" thì đáng tin hơn.
-- TFLite static kém nhất (85%). Em kiểm tra thì thấy output bị kẹp. Lúc calibration nó ước lượng giá trị lớn nhất của output là khoảng 14.6, nhưng thực tế lên tới 32.5. Các giá trị lớn bị kẹp hết về cùng một mức, nên có 62/300 ảnh bị hoà điểm giữa các class và đoán sai.
+- TFLite static kém nhất (85%). Em kiểm tra thì thấy output bị kẹp. Lúc calibration nó ước lượng giá trị lớn nhất của output là khoảng 14.6, nhưng thực tế lên tới 32.5. Các giá trị lớn bị kẹp hết về cùng một mức, nên có 62/300 ảnh bị hoà điểm giữa các class và đoán sai. (Nguyên nhân vì sao ước lượng thiếu: xem `BAO_CAO_09_10.md`.)
 
 ## 6. Kết luận
 

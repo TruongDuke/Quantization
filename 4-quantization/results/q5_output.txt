@@ -1,0 +1,35 @@
+Khoang logits that (PyTorch, 300 anh val): [-10.9, 32.5]
+Kho calibration: (500, 3, 224, 224)
+
+===== Thi nghiem B: cung 100 anh, doi thu tu =====
+Lan chay       Framework      Khoang output  Agree(%)  SNR(dB)
+B_theo_class   ONNX            [-9.1, 31.5]      96.3     24.6
+B_theo_class   TFLite          [-6.8, 14.6]      85.0     20.9
+B_dao_nguoc    ONNX            [-9.1, 31.5]      96.3     24.6
+B_dao_nguoc    TFLite          [-6.9, 15.7]      90.3     21.9
+B_tron         ONNX            [-9.1, 31.5]      96.3     24.6
+B_tron         TFLite          [-6.7, 14.3]      86.7     20.8
+
+===== Thi nghiem A: 5 subset ngau nhien (100 anh) =====
+Lan chay       Framework      Khoang output  Agree(%)  SNR(dB)
+A_seed0        ONNX            [-9.5, 28.4]      96.0     24.6
+A_seed0        TFLite          [-6.9, 15.7]      90.7     21.8
+A_seed1        ONNX            [-9.9, 27.9]      95.0     24.6
+A_seed1        TFLite          [-6.8, 16.3]      90.0     22.2
+A_seed2        ONNX            [-9.9, 34.6]      94.7     24.7
+A_seed2        TFLite          [-7.0, 15.9]      90.0     21.8
+A_seed3        ONNX            [-9.1, 34.6]      93.3     24.3
+A_seed3        TFLite          [-6.6, 16.4]      91.3     21.7
+A_seed4        ONNX            [-9.2, 28.2]      96.0     24.5
+A_seed4        TFLite          [-6.7, 15.6]      90.0     21.7
+
+===== Thi nghiem C: so luong anh calibration =====
+Lan chay       Framework      Khoang output  Agree(%)  SNR(dB)
+C_10anh        ONNX            [-7.6, 17.7]      91.3     23.9
+C_10anh        TFLite          [-6.5, 14.8]      85.7     18.1
+C_50anh        ONNX            [-9.7, 26.1]      95.7     24.8
+C_50anh        TFLite          [-7.1, 14.5]      85.3     21.3
+C_100anh       ONNX            [-9.5, 34.5]      95.3     24.3
+C_100anh       TFLite          [-7.1, 16.6]      91.7     22.4
+C_300anh       ONNX           [-10.0, 34.6]      95.0     24.1
+C_300anh       TFLite          [-6.5, 15.2]      88.7     21.5
