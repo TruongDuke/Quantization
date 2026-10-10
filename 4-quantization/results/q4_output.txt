@@ -1,0 +1,9 @@
+PyTorch gốc: accuracy = 64.7%
+
+Model             Size(MB)  Acc(%)  Agree(%)  SNR(dB)  Time(ms)
+ONNX FP32             46.8    64.7     100.0    110.3     15.23
+ONNX dynamic          11.8    66.3      93.0     20.6      9.66
+ONNX static           11.9    68.0      96.3     24.6      3.81
+TFLite FP32           46.8    64.7     100.0    109.9     16.10
+TFLite dynamic        11.8    67.3      95.3     27.7      4.64
+TFLite static         11.9    61.0      85.0     20.9      4.32

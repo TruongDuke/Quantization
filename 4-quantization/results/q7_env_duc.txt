@@ -1,0 +1,9 @@
+Python 3.11.4 | numpy 2.4.6 | onnxruntime 1.30.0 | TFLite: ai-edge-litert
+
+Model             Agree(%)  1 thread(ms)  4 thread(ms)
+ONNX FP32            100.0         47.52         14.97
+ONNX dynamic          93.0         17.71          9.68
+ONNX static           96.3         10.99          3.62
+TFLite FP32          100.0         53.20         14.99
+TFLite dynamic        95.3         11.45          4.55
+TFLite static         85.0         11.58          4.45

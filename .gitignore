@@ -13,3 +13,5 @@ imagenette2-160/
 *.zip
 3-deploy/benchmark_model
 huy-lab/
+5-mlsd/mlsd-official/
+5-mlsd/mlsd-pytorch/

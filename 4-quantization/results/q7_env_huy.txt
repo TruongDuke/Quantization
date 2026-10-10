@@ -1,0 +1,9 @@
+Python 3.11.4 | numpy 1.26.4 | onnxruntime 1.20.1 | TFLite: tensorflow 2.15.1
+
+Model             Agree(%)  1 thread(ms)  4 thread(ms)
+ONNX FP32            100.0         48.30         13.94
+ONNX dynamic     LOI: NotImplemented: [ONNXRuntimeError] : 9 : NOT_IMPLEMENTED : Could not find an implementation for 
+ONNX static           96.3         30.82          8.30
+TFLite FP32          100.0         52.25         14.86
+TFLite dynamic         0.0         13.37          7.34
+TFLite static         85.3         38.77         14.12

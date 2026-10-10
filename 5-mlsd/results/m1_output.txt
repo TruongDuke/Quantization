@@ -1,0 +1,58 @@
+(00:00) [START] LiteRT-Torch Convert
+(00:00) [START] LiteRT-Torch Convert > Torch Export: serving_default
+(00:00) [START] LiteRT-Torch Convert > Torch Export: serving_default > ExportedProgram Run Decompositions
+(00:01) [ DONE] LiteRT-Torch Convert > Torch Export: serving_default > ExportedProgram Run Decompositions (+00:00)
+(00:01) [ DONE] LiteRT-Torch Convert > Torch Export: serving_default (+00:01)
+(00:01) [START] LiteRT-Torch Convert > Run FX Passes
+(00:01) [START] LiteRT-Torch Convert > Run FX Passes > ExportedProgram Run Decompositions
+(00:02) [ DONE] LiteRT-Torch Convert > Run FX Passes > ExportedProgram Run Decompositions (+00:00)
+(00:02) [ DONE] LiteRT-Torch Convert > Run FX Passes (+00:01)
+(00:02) [START] LiteRT-Torch Convert > Lower to MLIR: serving_default
+(00:02) [START] LiteRT-Torch Convert > Lower to MLIR: serving_default > ExportedProgram Run Decompositions
+(00:03) [ DONE] LiteRT-Torch Convert > Lower to MLIR: serving_default > ExportedProgram Run Decompositions (+00:01)
+(00:03) [START] LiteRT-Torch Convert > Lower to MLIR: serving_default > ExportedProgram Run Decompositions
+(00:04) [ DONE] LiteRT-Torch Convert > Lower to MLIR: serving_default > ExportedProgram Run Decompositions (+00:01)
+(00:04) [START] LiteRT-Torch Convert > Lower to MLIR: serving_default > Create MLIR Module
+(00:07) [ DONE] LiteRT-Torch Convert > Lower to MLIR: serving_default > Create MLIR Module (+00:02)
+(00:07) [ DONE] LiteRT-Torch Convert > Lower to MLIR: serving_default (+00:04)
+(00:07) [START] LiteRT-Torch Convert > Merge MLIR Modules
+(00:07) [ DONE] LiteRT-Torch Convert > Merge MLIR Modules (+00:00)
+(00:07) [START] LiteRT-Torch Convert > Run LiteRT Converter Passes
+(00:07) [ DONE] LiteRT-Torch Convert > Run LiteRT Converter Passes (+00:00)
+(00:07) [ DONE] LiteRT-Torch Convert (+00:07)
+(00:00) [START] Write Model to mlsd_tiny_raw.tflite
+(00:00) [ DONE] Write Model to mlsd_tiny_raw.tflite (+00:00)
+(00:00) [START] LiteRT-Torch Convert
+(00:00) [START] LiteRT-Torch Convert > Torch Export: serving_default
+(00:00) [START] LiteRT-Torch Convert > Torch Export: serving_default > ExportedProgram Run Decompositions
+(00:00) [ DONE] LiteRT-Torch Convert > Torch Export: serving_default > ExportedProgram Run Decompositions (+00:00)
+(00:00) [ DONE] LiteRT-Torch Convert > Torch Export: serving_default (+00:00)
+(00:00) [START] LiteRT-Torch Convert > Run FX Passes
+(00:00) [START] LiteRT-Torch Convert > Run FX Passes > ExportedProgram Run Decompositions
+(00:01) [ DONE] LiteRT-Torch Convert > Run FX Passes > ExportedProgram Run Decompositions (+00:00)
+(00:01) [ DONE] LiteRT-Torch Convert > Run FX Passes (+00:00)
+(00:01) [START] LiteRT-Torch Convert > Lower to MLIR: serving_default
+(00:01) [START] LiteRT-Torch Convert > Lower to MLIR: serving_default > ExportedProgram Run Decompositions
+(00:02) [ DONE] LiteRT-Torch Convert > Lower to MLIR: serving_default > ExportedProgram Run Decompositions (+00:01)
+(00:02) [START] LiteRT-Torch Convert > Lower to MLIR: serving_default > ExportedProgram Run Decompositions
+(00:03) [ DONE] LiteRT-Torch Convert > Lower to MLIR: serving_default > ExportedProgram Run Decompositions (+00:01)
+(00:03) [START] LiteRT-Torch Convert > Lower to MLIR: serving_default > Create MLIR Module
+(00:06) [ DONE] LiteRT-Torch Convert > Lower to MLIR: serving_default > Create MLIR Module (+00:02)
+(00:06) [ DONE] LiteRT-Torch Convert > Lower to MLIR: serving_default (+00:04)
+(00:06) [START] LiteRT-Torch Convert > Merge MLIR Modules
+(00:06) [ DONE] LiteRT-Torch Convert > Merge MLIR Modules (+00:00)
+(00:06) [START] LiteRT-Torch Convert > Run LiteRT Converter Passes
+(00:06) [ DONE] LiteRT-Torch Convert > Run LiteRT Converter Passes (+00:00)
+(00:06) [ DONE] LiteRT-Torch Convert (+00:06)
+(00:00) [START] Write Model to mlsd_tiny_decoder.tflite
+(00:00) [ DONE] Write Model to mlsd_tiny_decoder.tflite (+00:00)
+Da convert xong 2 file
+
+[1] PyTorch vs TFLite cua minh: SNR = 96.2 dB, max err = 1.73e-02
+[2] Chinh thuc vs cua minh: SNR vmap = 7.5 dB | SNR scores = 17.4 dB | trung 50/200 diem
+
+Model                               1 thread(ms)  4 thread(ms)
+Cua minh - chi model                      120.79         33.42
+Cua minh - co decoder                     121.37         33.93
+Chinh thuc FP32                           121.96         34.80
+Chinh thuc FP16                           122.26         34.75

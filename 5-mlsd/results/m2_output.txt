@@ -1,0 +1,6 @@
+Calibration: (100, 4, 512, 512) | So anh danh gia: 21
+Model             Size(MB)  SNR(dB)  So doan  Giu duoc(%)  1 thr(ms)  4 thr(ms)
+FP32                  2.57      inf     1206        100.0     120.17      33.70
+Dynamic               0.81      3.4     1080         59.6      45.84      21.60
+Static (EMA)          0.88      3.7     3359         37.1      29.96       9.38
+Static (global)       0.88      3.5     2854          8.9      29.49       9.36

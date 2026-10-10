@@ -1,0 +1,26 @@
+Model name: resnet18_fp32.tflite
+Original model size: 44.61 MiB
+Quantized model size: 11.33 MiB
+Quantization Ratio: 0.25 (3.9x smaller)
+Total time: 45.44 ms
+Model name: resnet18_fp32.tflite
+Original model size: 44.61 MiB
+Quantized model size: 11.33 MiB
+Quantization Ratio: 0.25 (3.9x smaller)
+Total time: 42.69 ms
+Model name: resnet18_fp32.tflite
+Original model size: 44.61 MiB
+Quantized model size: 11.33 MiB
+Quantization Ratio: 0.25 (3.9x smaller)
+Total time: 45.23 ms
+Model name: resnet18_fp32.tflite
+Original model size: 44.61 MiB
+Quantized model size: 11.33 MiB
+Quantization Ratio: 0.25 (3.9x smaller)
+Total time: 46.12 ms
+
+Cach tinh          Thu tu         Khoang output  Agree(%)  SNR(dB)
+EMA (mac dinh)     theo_class      [-6.8, 14.6]      85.0     20.9
+EMA (mac dinh)     dao_nguoc       [-6.9, 15.7]      90.3     21.9
+Min/max toan cuc   theo_class      [-9.1, 31.5]      95.7     24.6
+Min/max toan cuc   dao_nguoc       [-9.1, 31.5]      95.7     24.6
