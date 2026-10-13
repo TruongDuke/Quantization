@@ -1,0 +1,72 @@
+[
+ {
+  "name": "INT8 het (tach head)",
+  "size_mb": 0.863744,
+  "ms": 9.354103996884078,
+  "snr_center_full": 15.900864387254641,
+  "snr_disp_full": 3.6787373433679154,
+  "center_recall": 65.83747927031509,
+  "disp_err_median_px": 2.5880956649780273,
+  "disp_err_p90_px": 8.755464553833008,
+  "disp_within_2px": 27.031509121061358,
+  "start_end_swapped": 4.311774461028192,
+  "lines_kept": 57.744129917545365,
+  "n_lines": 1587
+ },
+ {
+  "name": "float: 3 layer nhay",
+  "size_mb": 0.86824,
+  "ms": 10.1058540167287,
+  "snr_center_full": 21.543506849300307,
+  "snr_disp_full": 9.888878046340933,
+  "center_recall": 81.92371475953566,
+  "disp_err_median_px": 2.2860679626464844,
+  "disp_err_p90_px": 4.43331241607666,
+  "disp_within_2px": 35.7379767827529,
+  "start_end_swapped": 0.4975124378109453,
+  "lines_kept": 77.72307171896335,
+  "n_lines": 1809
+ },
+ {
+  "name": "float: head disp",
+  "size_mb": 0.865248,
+  "ms": 9.459833498112857,
+  "snr_center_full": 15.900864387254641,
+  "snr_disp_full": 3.6779039251927266,
+  "center_recall": 65.75456053067994,
+  "disp_err_median_px": 2.5588431358337402,
+  "disp_err_p90_px": 8.863607406616211,
+  "disp_within_2px": 28.109452736318406,
+  "start_end_swapped": 4.311774461028192,
+  "lines_kept": 57.62736819697095,
+  "n_lines": 1584
+ },
+ {
+  "name": "float: 3 layer nhay + head disp",
+  "size_mb": 0.869664,
+  "ms": 9.978791465982795,
+  "snr_center_full": 21.543506849300307,
+  "snr_disp_full": 9.885681871194974,
+  "center_recall": 81.92371475953566,
+  "disp_err_median_px": 2.2803497314453125,
+  "disp_err_p90_px": 4.440550804138184,
+  "disp_within_2px": 36.73300165837479,
+  "start_end_swapped": 0.4975124378109453,
+  "lines_kept": 77.74814689396582,
+  "n_lines": 1808
+ },
+ {
+  "name": "float: 3 layer nhay + 2 head",
+  "size_mb": 0.869936,
+  "ms": 10.083478991873562,
+  "snr_center_full": 21.56212158597098,
+  "snr_disp_full": 9.885681871194974,
+  "center_recall": 81.2603648424544,
+  "disp_err_median_px": 2.2803497314453125,
+  "disp_err_p90_px": 4.440550804138184,
+  "disp_within_2px": 36.73300165837479,
+  "start_end_swapped": 0.4975124378109453,
+  "lines_kept": 77.50749549402197,
+  "n_lines": 1780
+ }
+]
