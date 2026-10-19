@@ -16,3 +16,6 @@ huy-lab/
 5-mlsd/mlsd-official/
 5-mlsd/mlsd-pytorch/
 *.jar
+8-qat/distilbert/model_fp32/
+8-qat/distilbert/data/
+8-qat/**/*.log
