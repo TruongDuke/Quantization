@@ -35,7 +35,17 @@ args = ap.parse_args()
 if args.device == "auto":
     args.device = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
 dev = torch.device(args.device)
-print("Device:", dev, flush=True)
+if dev.type == "cuda":
+    # Colab: cuDNN đi kèm torch có thể khác phiên bản cuDNN có sẵn của máy -> lỗi khi train conv.
+    # Thử 1 bước conv có backward, nếu lỗi thì tắt cuDNN (dùng kernel CUDA thường, chậm hơn nhưng chạy được).
+    try:
+        _c = torch.nn.Conv2d(4, 8, 3).to(dev)
+        _c(torch.randn(2, 4, 16, 16, device=dev)).sum().backward()
+        torch.cuda.synchronize()
+    except RuntimeError as e:
+        print("cuDNN loi, tat cuDNN:", str(e)[:80], flush=True)
+        torch.backends.cudnn.enabled = False
+print("Device:", dev, "| cuDNN:", torch.backends.cudnn.enabled if dev.type == "cuda" else "-", flush=True)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 EXP1 = os.path.abspath(f"{HERE}/../../7-mlsd-lowbit/exp1_metrics_and_heads.py")
