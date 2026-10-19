@@ -1,0 +1,9 @@
+# Ket qua qat_mlsd_v2.py tren Google Colab (T4, cuDNN tat do loi phien ban), 19/10/2026
+# Chep lai tu output cua notebook colab_qat_mlsd_v2.ipynb. Cot ms la TFLite tren CPU 2 nhan cua Colab, khong dung de so toc do.
+# --steps 1000 --bs 8 --lr 2e-5 --also_full_int8 ; train keep3 429 s, full 444 s
+Device: cuda | cuDNN: False
+FP32                         center 100.0  Dmed 0.00  D<2px 100.0  giu 100.0  doan  1206 | 2.50 MB 114.7 ms
+PTQ INT8 tat ca              center  65.8  Dmed 2.59  D<2px  26.9  giu  58.0  doan  1590 | 0.81 MB 139.2 ms
+PTQ INT8 giu 3 float         center  81.8  Dmed 2.29  D<2px  35.7  giu  77.6  doan  1814 | 0.81 MB 130.6 ms
+QAT INT8 giu 3 float         center  82.0  Dmed 2.44  D<2px  29.6  giu  83.4  doan  1783 | 0.81 MB 133.8 ms
+QAT INT8 tat ca              center  77.7  Dmed 1.96  D<2px  51.7  giu  70.7  doan  1722 | 0.81 MB 138.6 ms

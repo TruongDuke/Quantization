@@ -35,6 +35,29 @@ Hướng làm: deploy bằng TFLite/LiteRT INT8 (hướng Android), khác với 
 - QAT cải thiện rõ so với PTQ cùng quy trình (31.2% lên 44.0%), loss displacement vẫn đang giảm đều (22.2 xuống 16.1) nên train thêm còn tốt lên.
 - Nhưng vẫn thấp hơn bản PTQ tốt nhất hôm 13/10 bằng ai-edge-quantizer (tách head + giữ 3 layer đầu float: 77.7%). Lý do có thể: cấu hình của PT2EQuantizer quantize activation kiểu đối xứng (phí nửa khoảng với output ReLU), quantize cả 3 layer nhạy nhất, và train còn quá ngắn.
 
+## 1b. M-LSD: QAT bản 2, so cùng cấu hình với PTQ (chạy trên Google Colab)
+
+Bản 1 ở trên so không công bằng: QAT dùng cấu hình mặc định của litert-torch, còn PTQ tốt nhất (77.7%) dùng ai-edge-quantizer có giữ 3 layer float. Bản 2 sửa lại:
+- Fake quantize tự viết, mô phỏng đúng cấu hình của ai-edge-quantizer: weight INT8 per-channel đối xứng, activation INT8 per-tensor bất đối xứng, khoảng activation lấy bằng EMA 0.95. BatchNorm gộp vào conv trước khi train.
+- Train xong gỡ fake quantize, quantize lại bằng ai-edge-quantizer giống hệt bản PTQ.
+- 2 cấu hình: giữ 3 layer nhạy ở float, và quantize tất cả.
+- Train 1000 bước, batch 8, Adam lr 2e-5 giảm dần (cosine), chốt khoảng activation sau 20% số bước. Data và loss giống bản 1 (distillation, 3000 ảnh Imagenette).
+- Chạy trên Colab GPU T4, mỗi cấu hình khoảng 7 phút train. Torch cài thêm bị lệch phiên bản cuDNN với Colab, script tự tắt cuDNN để chạy được.
+
+| Bản (TFLite INT8, so với FP32) | Center | Sai số đầu mút (trung vị) | Lệch dưới 2 px | Giữ đoạn thẳng |
+|---|---|---|---|---|
+| PTQ INT8 tất cả | 65.8% | 2.59 px | 26.9% | 58.0% |
+| QAT INT8 tất cả | 77.7% | 1.96 px | 51.7% | 70.7% |
+| PTQ INT8 giữ 3 float | 81.8% | 2.29 px | 35.7% | 77.6% |
+| QAT INT8 giữ 3 float | 82.0% | 2.44 px | 29.6% | 83.4% |
+
+- Cùng cấu hình thì QAT vượt PTQ ở cả 2 trường hợp: quantize tất cả 58.0% lên 70.7%, giữ 3 float 77.6% lên 83.4%.
+- QAT quantize tất cả cải thiện displacement rất rõ (sai số 2.59 xuống 1.96 px, tốt nhất trong các bản). Bản này là INT8 hoàn toàn nên chạy được trên NPU/DSP.
+- QAT giữ 3 float chủ yếu cải thiện center (chọn đúng điểm, ít đoạn thừa), displacement không tốt lên. Có thể do trọng số loss displacement (0.05) đang nhỏ.
+- Tốc độ lấy theo số đo trên Mac (13/10): giữ 3 float khoảng 10 ms, INT8 tất cả khoảng 9 ms, FP32 33 ms. Số ms trên Colab là TFLite chạy CPU 2 nhân nên không dùng.
+
+Code: `mlsd/qat_mlsd_v2.py`, notebook `mlsd/colab_qat_mlsd_v2.ipynb`, kết quả `mlsd/results/qat_mlsd_v2_colab.txt`.
+
 ## 2. DistilBERT (SST-2)
 
 **Data**: GLUE SST-2. Train QAT 4000 câu, calibration 100 câu (không trùng), đánh giá 872 câu validation. Câu dài tối đa 64 token.
@@ -72,13 +95,13 @@ Hướng làm: deploy bằng TFLite/LiteRT INT8 (hướng Android), khác với 
 
 ## 4. Kết luận
 
-- M-LSD: QAT có giúp (31% lên 44% đoạn thẳng so với PTQ cùng quy trình) nhưng train còn ngắn và chưa vượt được PTQ tốt nhất có chọn layer giữ float (77.7%).
+- M-LSD: khi so cùng cấu hình, QAT vượt PTQ: giữ 3 float 77.6% lên 83.4%, quantize tất cả 58.0% lên 70.7% (sai số đầu mút còn 1.96 px).
 - DistilBERT: chỉ quantize Linear thì PTQ đã đủ tốt, QAT gần như không thêm gì. Quantize toàn bộ op thì phải giữ LayerNorm / Softmax / GELU ở float, QAT không cứu được.
-- Giống kết luận của Huy: calibration và chọn đúng phần để quantize quan trọng hơn train QAT.
+- Với DistilBERT thì giống kết luận của Huy (chọn đúng phần để quantize là đủ). Với M-LSD thì QAT có ích thật, nhất là khi muốn INT8 hoàn toàn.
 
 ## 5. Tiếp theo
 
-- M-LSD: QAT kết hợp với giữ 3 layer nhạy ở float và activation bất đối xứng, train lâu hơn.
+- M-LSD: tăng trọng số loss displacement cho bản giữ 3 float, train lâu hơn, đo trên điện thoại.
 - DistilBERT: quantize cả embedding để giảm kích thước, thử QAT có fake quantize cả LayerNorm/Softmax nếu muốn quantize toàn bộ.
 - Đo trên điện thoại Android thật.
 
