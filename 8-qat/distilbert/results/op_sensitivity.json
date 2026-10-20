@@ -1,0 +1,59 @@
+[
+ {
+  "group": "chi Linear",
+  "ops": [],
+  "acc": 90.02293577981652
+ },
+ {
+  "group": "+ matmul trong attention (BATCH_MATMUL)",
+  "ops": [
+   "BATCH_MATMUL"
+  ],
+  "acc": 90.59633027522935
+ },
+ {
+  "group": "+ Softmax",
+  "ops": [
+   "SOFTMAX"
+  ],
+  "acc": 90.36697247706422
+ },
+ {
+  "group": "+ GELU",
+  "ops": [
+   "GELU"
+  ],
+  "acc": 90.02293577981652
+ },
+ {
+  "group": "+ LayerNorm (MEAN, SUB, SQUARED_DIFF, RSQRT)",
+  "ops": [
+   "MEAN",
+   "SUB",
+   "SQUARED_DIFFERENCE",
+   "RSQRT"
+  ],
+  "acc": 88.76146788990825
+ },
+ {
+  "group": "+ ADD, MUL (residual, LayerNorm, mask)",
+  "ops": [
+   "ADD",
+   "MUL"
+  ],
+  "acc": 54.81651376146789
+ },
+ {
+  "group": "tat ca tru ADD, MUL",
+  "ops": [
+   "BATCH_MATMUL",
+   "SOFTMAX",
+   "GELU",
+   "MEAN",
+   "SUB",
+   "SQUARED_DIFFERENCE",
+   "RSQRT"
+  ],
+  "acc": 87.72935779816514
+ }
+]

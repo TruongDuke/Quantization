@@ -86,6 +86,29 @@ Code: `mlsd/qat_mlsd_v2.py`, notebook `mlsd/colab_qat_mlsd_v2.ipynb`, kết qu�
 - Quantize toàn bộ op thì hỏng (66%, giống kết quả 52% của Huy), QAT chỉ kéo lên 71%. Nguyên nhân là các op LayerNorm, Softmax, GELU, attention mask bị quantize INT8, mà lúc QAT em giữ float các op này nên model không học bù được cho chúng.
 - Bản static chỉ Linear vẫn 138 MB vì bảng embedding (khoảng 23 triệu tham số) chưa được quantize, bản dynamic thì có nên còn 68 MB.
 
+**Phân tích thêm (20/10): QAT đang làm những layer nào, vì sao không giúp**
+
+- QAT chỉ fake quantize 38 lớp Linear (q, k, v, out của attention và lin1, lin2 của FFN ở 6 block, cộng pre_classifier, classifier). Các phần bản đầu giữ float (embedding, LayerNorm, Softmax, GELU, matmul trong attention, phép cộng residual) KHÔNG được fake quantize lúc QAT.
+- Quantize Linear + thêm từng loại op (static INT8, 872 câu):
+
+| Quantize | Accuracy |
+|---|---|
+| Chỉ Linear | 90.02% |
+| + matmul trong attention | 90.60% |
+| + Softmax | 90.37% |
+| + GELU | 90.02% |
+| + LayerNorm (MEAN, SUB, SQUARED_DIFF, RSQRT) | 88.76% |
+| + ADD, MUL | 54.82% |
+| Tất cả trừ ADD, MUL | 87.73% |
+| Tất cả | 66.17% |
+
+- Thủ phạm là ADD/MUL ở luồng residual và đầu ra LayerNorm: vài kênh có giá trị ngoại lai rất lớn (khoảng [-353, 4] hoặc [0.8, 349]) trong khi phần lớn giá trị chỉ vài đơn vị (khoảng trung vị của các tensor ADD/MUL là 22). INT8 per-tensor dùng 1 scale cho cả tensor nên các giá trị bình thường chỉ còn vài nấc, mất thông tin. Attention mask không phải nguyên nhân (mask làm bằng SELECT, không qua ADD). Embedding không quantize static được (ai-edge-quantizer không hỗ trợ), nên file vẫn 138 MB.
+- Vì sao QAT không giúp:
+  1. Với bản chỉ quantize Linear: PTQ đã 90.0% so với FP32 91.1% (lệch khoảng 9 câu), còn rất ít chỗ để cải thiện. QAT tăng 0.23 điểm (2 câu), nằm trong nhiễu đo.
+  2. Train QAT gần như không đổi gì: accuracy giả lập trước và sau train đều 90.71%, loss còn tăng (cross-entropy 0.024 lên 0.079). Model gốc đã khớp nhãn và khớp FP32, 1 epoch với lr 1e-5 không học thêm được gì.
+  3. Với bản quantize toàn bộ: QAT không fake quantize residual/LayerNorm, tức là không cho model "thấy" đúng chỗ gây hỏng, nên không học bù được (66% lên 71% chỉ là phụ).
+- Hướng sửa: giữ ADD/MUL ở float (87.7%, gần INT8 toàn bộ), hoặc QAT có fake quantize cả residual/LayerNorm, hoặc dùng activation 16-bit / SmoothQuant cho các tensor có ngoại lai.
+
 ## 3. Khó khăn gặp phải
 
 - litert-torch và torchao bản hiện tại không tương thích ở phần QAT conv + BatchNorm (litert-torch truyền hàm, torchao chỉ nhận nn.Module). Đã vá lúc chạy.

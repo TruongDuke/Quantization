@@ -1,0 +1,9 @@
+# Khoang gia tri (calibration 100 cau, EMA) cua cac tensor ADD/MUL rong nhat trong DistilBERT
+# (luong residual va dau ra LayerNorm). 103 tensor ADD/MUL, khoang trung vi ~22.
+ADD  [ -353.4,   4.11]  TransformerBlock_2 (residual)
+ADD  [  0.838, 348.8 ]  TransformerBlock_4 / output_layer_norm
+ADD  [ -200.6,   4.42]  TransformerBlock_1 (residual)
+ADD  [  0.986, 162.4 ]  TransformerBlock_2 / output_layer_norm
+ADD  [ -106.5,   4.96]  TransformerBlock_3 (residual)
+ADD  [ -105.8,   3.21]  TransformerBlock_2 / sa_layer_norm
+MUL  [ -104.6,   3.00]  TransformerBlock_2 / sa_layer_norm
