@@ -19,3 +19,6 @@ huy-lab/
 8-qat/distilbert/model_fp32/
 8-qat/distilbert/data/
 8-qat/**/*.log
+9-zipformer-litert/.venv-zf/
+9-zipformer-litert/model_onnx/
+9-zipformer-litert/out_*/

@@ -1,0 +1,1188 @@
+
+[07mModel optimizing started[0m ============================================================
+Your model contains "Tile" ops or/and "ConstantOfShape" ops. Folding these ops 
+can make the simplified model much larger. If it is not expected, please specify
+"--no-large-tensor" (which will lose some optimization chances)
+Simplifying...
+Finish! Here is the difference:
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃                ┃ Original Model ┃ Simplified Model ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ Add            │ 251            │ 251              │
+│ Cast           │ 20             │ 20               │
+│ Concat         │ 89             │ 89               │
+│ Constant       │ 457            │ 457              │
+│ Conv           │ 63             │ 63               │
+│ CumSum         │ 10             │ 10               │
+│ Equal          │ 4              │ 4                │
+│ Expand         │ 4              │ 4                │
+│ Gather         │ 94             │ 94               │
+│ GatherElements │ 10             │ 10               │
+│ MatMul         │ 152            │ 152              │
+│ Mul            │ 153            │ 153              │
+│ Pow            │ 10             │ 10               │
+│ Reciprocal     │ 10             │ 10               │
+│ ReduceMean     │ 10             │ 10               │
+│ ReduceSum      │ 10             │ 10               │
+│ Reshape        │ 110            │ 110              │
+│ Shape          │ 14             │ 14               │
+│ Sigmoid        │ 73             │ 73               │
+│ Slice          │ 94             │ 94               │
+│ Softmax        │ 15             │ 15               │
+│ Split          │ 20             │ 20               │
+│ Sub            │ 63             │ 63               │
+│ Tile           │ 10             │ 10               │
+│ Transpose      │ 113            │ 113              │
+│ Unsqueeze      │ 139            │ 139              │
+│ Where          │ 4              │ 4                │
+│ Model Size     │ 74.5MiB        │ 74.5MiB          │
+└────────────────┴────────────────┴──────────────────┘
+
+Your model contains "Tile" ops or/and "ConstantOfShape" ops. Folding these ops 
+can make the simplified model much larger. If it is not expected, please specify
+"--no-large-tensor" (which will lose some optimization chances)
+Simplifying...
+Finish! Here is the difference:
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃                ┃ Original Model ┃ Simplified Model ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ Add            │ 251            │ 251              │
+│ Cast           │ 20             │ 20               │
+│ Concat         │ 89             │ 89               │
+│ Constant       │ 457            │ 457              │
+│ Conv           │ 63             │ 63               │
+│ CumSum         │ 10             │ 10               │
+│ Equal          │ 4              │ 4                │
+│ Expand         │ 4              │ 4                │
+│ Gather         │ 94             │ 94               │
+│ GatherElements │ 10             │ 10               │
+│ MatMul         │ 152            │ 152              │
+│ Mul            │ 153            │ 153              │
+│ Pow            │ 10             │ 10               │
+│ Reciprocal     │ 10             │ 10               │
+│ ReduceMean     │ 10             │ 10               │
+│ ReduceSum      │ 10             │ 10               │
+│ Reshape        │ 110            │ 110              │
+│ Shape          │ 14             │ 14               │
+│ Sigmoid        │ 73             │ 73               │
+│ Slice          │ 94             │ 94               │
+│ Softmax        │ 15             │ 15               │
+│ Split          │ 20             │ 20               │
+│ Sub            │ 63             │ 63               │
+│ Tile           │ 10             │ 10               │
+│ Transpose      │ 113            │ 113              │
+│ Unsqueeze      │ 139            │ 139              │
+│ Where          │ 4              │ 4                │
+│ Model Size     │ 74.5MiB        │ 74.5MiB          │
+└────────────────┴────────────────┴──────────────────┘
+
+Your model contains "Tile" ops or/and "ConstantOfShape" ops. Folding these ops 
+can make the simplified model much larger. If it is not expected, please specify
+"--no-large-tensor" (which will lose some optimization chances)
+Simplifying...
+Finish! Here is the difference:
+┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃                ┃ Original Model ┃ Simplified Model ┃
+┡━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ Add            │ 251            │ 251              │
+│ Cast           │ 20             │ 20               │
+│ Concat         │ 89             │ 89               │
+│ Constant       │ 457            │ 457              │
+│ Conv           │ 63             │ 63               │
+│ CumSum         │ 10             │ 10               │
+│ Equal          │ 4              │ 4                │
+│ Expand         │ 4              │ 4                │
+│ Gather         │ 94             │ 94               │
+│ GatherElements │ 10             │ 10               │
+│ MatMul         │ 152            │ 152              │
+│ Mul            │ 153            │ 153              │
+│ Pow            │ 10             │ 10               │
+│ Reciprocal     │ 10             │ 10               │
+│ ReduceMean     │ 10             │ 10               │
+│ ReduceSum      │ 10             │ 10               │
+│ Reshape        │ 110            │ 110              │
+│ Shape          │ 14             │ 14               │
+│ Sigmoid        │ 73             │ 73               │
+│ Slice          │ 94             │ 94               │
+│ Softmax        │ 15             │ 15               │
+│ Split          │ 20             │ 20               │
+│ Sub            │ 63             │ 63               │
+│ Tile           │ 10             │ 10               │
+│ Transpose      │ 113            │ 113              │
+│ Unsqueeze      │ 139            │ 139              │
+│ Where          │ 4              │ 4                │
+│ Model Size     │ 74.5MiB        │ 74.5MiB          │
+└────────────────┴────────────────┴──────────────────┘
+
+[32mModel optimizing complete![0m
+
+[07mAutomatic generation of each OP name started[0m ========================================
+[32mAutomatic generation of each OP name complete![0m
+
+[07mModel loaded[0m ========================================================================
+
+[07mModel conversion started[0m ============================================================
+[32mINFO:[0m [32minput_op_name[0m: x [32mshape[0m: ['N', 39, 80] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_len_0 [32mshape[0m: [2, 'N'] [32mdtype[0m: int64
+[32mINFO:[0m [32minput_op_name[0m: cached_len_1 [32mshape[0m: [2, 'N'] [32mdtype[0m: int64
+[32mINFO:[0m [32minput_op_name[0m: cached_len_2 [32mshape[0m: [2, 'N'] [32mdtype[0m: int64
+[32mINFO:[0m [32minput_op_name[0m: cached_len_3 [32mshape[0m: [2, 'N'] [32mdtype[0m: int64
+[32mINFO:[0m [32minput_op_name[0m: cached_len_4 [32mshape[0m: [2, 'N'] [32mdtype[0m: int64
+[32mINFO:[0m [32minput_op_name[0m: cached_avg_0 [32mshape[0m: [2, 'N', 256] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_avg_1 [32mshape[0m: [2, 'N', 256] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_avg_2 [32mshape[0m: [2, 'N', 256] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_avg_3 [32mshape[0m: [2, 'N', 256] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_avg_4 [32mshape[0m: [2, 'N', 256] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_key_0 [32mshape[0m: [2, 64, 'N', 192] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_key_1 [32mshape[0m: [2, 32, 'N', 192] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_key_2 [32mshape[0m: [2, 16, 'N', 192] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_key_3 [32mshape[0m: [2, 8, 'N', 192] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_key_4 [32mshape[0m: [2, 32, 'N', 192] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val_0 [32mshape[0m: [2, 64, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val_1 [32mshape[0m: [2, 32, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val_2 [32mshape[0m: [2, 16, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val_3 [32mshape[0m: [2, 8, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val_4 [32mshape[0m: [2, 32, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val2_0 [32mshape[0m: [2, 64, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val2_1 [32mshape[0m: [2, 32, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val2_2 [32mshape[0m: [2, 16, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val2_3 [32mshape[0m: [2, 8, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_val2_4 [32mshape[0m: [2, 32, 'N', 96] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv1_0 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv1_1 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv1_2 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv1_3 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv1_4 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv2_0 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv2_1 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv2_2 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv2_3 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[32mINFO:[0m [32minput_op_name[0m: cached_conv2_4 [32mshape[0m: [2, 'N', 256, 30] [32mdtype[0m: float32
+[33mWARNING:[0m The optimization process for shape estimation is skipped because it contains OPs that cannot be inferred by the standard onnxruntime.
+[33mWARNING:[0m onnxruntime output memmap requires static output shapes. Provide --shape_hints or reduce validation outputs.
+
+[32mINFO:[0m [32m37 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_22
+[32mINFO:[0m [36m input_name.1[0m: cached_len_0 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_22_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_0 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m38 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_23
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_0 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_23_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_0 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_1/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_1/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m39 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_24
+[32mINFO:[0m [36m input_name.1[0m: cached_key_0 [36mshape[0m: [2, 64, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_24_output_0 [36mshape[0m: [64, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_0 [34mshape[0m: (2, None, 192, 64) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_2/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_2/GatherV2:0 [34mshape[0m: (None, 192, 64) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m40 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_25
+[32mINFO:[0m [36m input_name.1[0m: cached_val_0 [36mshape[0m: [2, 64, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_25_output_0 [36mshape[0m: [64, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_0 [34mshape[0m: (2, None, 96, 64) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_3/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_3/GatherV2:0 [34mshape[0m: (None, 96, 64) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m41 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_26
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_0 [36mshape[0m: [2, 64, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_26_output_0 [36mshape[0m: [64, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_0 [34mshape[0m: (2, None, 96, 64) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_4/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_4/GatherV2:0 [34mshape[0m: (None, 96, 64) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m42 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_27
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_0 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_27_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_0 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_5/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_5/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m43 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_28
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_0 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_28_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_0 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_6/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_6/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m44 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_65
+[32mINFO:[0m [36m input_name.1[0m: cached_len_1 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_65_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_1 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_7/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_7/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m45 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_66
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_1 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_66_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_1 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_8/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_8/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m46 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_67
+[32mINFO:[0m [36m input_name.1[0m: cached_key_1 [36mshape[0m: [2, 32, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_67_output_0 [36mshape[0m: [32, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_1 [34mshape[0m: (2, None, 192, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_9/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_9/GatherV2:0 [34mshape[0m: (None, 192, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m47 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_68
+[32mINFO:[0m [36m input_name.1[0m: cached_val_1 [36mshape[0m: [2, 32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_68_output_0 [36mshape[0m: [32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_1 [34mshape[0m: (2, None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_10/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_10/GatherV2:0 [34mshape[0m: (None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m48 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_69
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_1 [36mshape[0m: [2, 32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_69_output_0 [36mshape[0m: [32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_1 [34mshape[0m: (2, None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_11/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_11/GatherV2:0 [34mshape[0m: (None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m49 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_70
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_1 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_70_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_1 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_12/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_12/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m50 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_71
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_1 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_71_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_1 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_13/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_13/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m51 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_108
+[32mINFO:[0m [36m input_name.1[0m: cached_len_2 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_108_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_2 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_14/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_14/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m52 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_109
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_2 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_109_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_2 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_15/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_15/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m53 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_110
+[32mINFO:[0m [36m input_name.1[0m: cached_key_2 [36mshape[0m: [2, 16, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_110_output_0 [36mshape[0m: [16, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_2 [34mshape[0m: (2, None, 192, 16) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_16/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_16/GatherV2:0 [34mshape[0m: (None, 192, 16) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m54 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_111
+[32mINFO:[0m [36m input_name.1[0m: cached_val_2 [36mshape[0m: [2, 16, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_111_output_0 [36mshape[0m: [16, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_2 [34mshape[0m: (2, None, 96, 16) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_17/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_17/GatherV2:0 [34mshape[0m: (None, 96, 16) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m55 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_112
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_2 [36mshape[0m: [2, 16, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_112_output_0 [36mshape[0m: [16, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_2 [34mshape[0m: (2, None, 96, 16) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_18/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_18/GatherV2:0 [34mshape[0m: (None, 96, 16) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m56 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_113
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_2 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_113_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_2 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_19/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_19/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m57 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_114
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_2 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_114_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_2 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_20/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_20/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m58 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_151
+[32mINFO:[0m [36m input_name.1[0m: cached_len_3 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_151_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_3 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_21/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_21/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m59 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_152
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_3 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_152_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_3 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_22/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_22/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m60 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_153
+[32mINFO:[0m [36m input_name.1[0m: cached_key_3 [36mshape[0m: [2, 8, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_153_output_0 [36mshape[0m: [8, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_3 [34mshape[0m: (2, None, 192, 8) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_23/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_23/GatherV2:0 [34mshape[0m: (None, 192, 8) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m61 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_154
+[32mINFO:[0m [36m input_name.1[0m: cached_val_3 [36mshape[0m: [2, 8, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_154_output_0 [36mshape[0m: [8, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_3 [34mshape[0m: (2, None, 96, 8) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_24/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_24/GatherV2:0 [34mshape[0m: (None, 96, 8) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m62 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_155
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_3 [36mshape[0m: [2, 8, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_155_output_0 [36mshape[0m: [8, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_3 [34mshape[0m: (2, None, 96, 8) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_25/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_25/GatherV2:0 [34mshape[0m: (None, 96, 8) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m63 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_156
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_3 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_156_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_3 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_26/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_26/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m64 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_157
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_3 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_157_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_3 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_27/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_27/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m65 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_194
+[32mINFO:[0m [36m input_name.1[0m: cached_len_4 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_194_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_4 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_28/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_28/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m66 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_195
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_4 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_195_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_4 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_29/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_29/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m67 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_196
+[32mINFO:[0m [36m input_name.1[0m: cached_key_4 [36mshape[0m: [2, 32, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_196_output_0 [36mshape[0m: [32, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_4 [34mshape[0m: (2, None, 192, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_30/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_30/GatherV2:0 [34mshape[0m: (None, 192, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m68 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_197
+[32mINFO:[0m [36m input_name.1[0m: cached_val_4 [36mshape[0m: [2, 32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_197_output_0 [36mshape[0m: [32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_4 [34mshape[0m: (2, None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_31/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_31/GatherV2:0 [34mshape[0m: (None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m69 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_198
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_4 [36mshape[0m: [2, 32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_198_output_0 [36mshape[0m: [32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_4 [34mshape[0m: (2, None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_32/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_32/GatherV2:0 [34mshape[0m: (None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m70 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_199
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_4 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_199_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_4 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_33/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_33/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m71 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_200
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_4 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_200_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_4 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_34/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_34/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m72 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /encoder_embed/Unsqueeze
+[32mINFO:[0m [36m input_name.1[0m: x [36mshape[0m: ['N', 39, 80] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_1_output_0 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /encoder_embed/Unsqueeze_output_0 [36mshape[0m: ['N', 1, 39, 80] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: x [34mshape[0m: (1, 80, 39) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [1, 1, 80, 39] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape/Reshape:0 [34mshape[0m: (1, 1, 80, 39) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m73 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_1
+[32mINFO:[0m [36m input_name.1[0m: cached_len_0 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_1_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_0 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_35/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_35/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m74 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_2
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_0 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_2_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_0 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_36/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_36/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m75 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_3
+[32mINFO:[0m [36m input_name.1[0m: cached_key_0 [36mshape[0m: [2, 64, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_3_output_0 [36mshape[0m: [64, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_0 [34mshape[0m: (2, None, 192, 64) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_37/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_37/GatherV2:0 [34mshape[0m: (None, 192, 64) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m76 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_4
+[32mINFO:[0m [36m input_name.1[0m: cached_val_0 [36mshape[0m: [2, 64, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_4_output_0 [36mshape[0m: [64, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_0 [34mshape[0m: (2, None, 96, 64) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_38/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_38/GatherV2:0 [34mshape[0m: (None, 96, 64) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m77 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_5
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_0 [36mshape[0m: [2, 64, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_5_output_0 [36mshape[0m: [64, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_0 [34mshape[0m: (2, None, 96, 64) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_39/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_39/GatherV2:0 [34mshape[0m: (None, 96, 64) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m78 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_6
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_0 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_6_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_0 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_40/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_40/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m79 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_7
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_0 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_7_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_0 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_41/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_41/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m80 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_44
+[32mINFO:[0m [36m input_name.1[0m: cached_len_1 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_44_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_1 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_42/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_42/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m81 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_45
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_1 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_45_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_1 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_43/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_43/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m82 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_46
+[32mINFO:[0m [36m input_name.1[0m: cached_key_1 [36mshape[0m: [2, 32, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_46_output_0 [36mshape[0m: [32, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_1 [34mshape[0m: (2, None, 192, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_44/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_44/GatherV2:0 [34mshape[0m: (None, 192, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m83 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_47
+[32mINFO:[0m [36m input_name.1[0m: cached_val_1 [36mshape[0m: [2, 32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_47_output_0 [36mshape[0m: [32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_1 [34mshape[0m: (2, None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_45/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_45/GatherV2:0 [34mshape[0m: (None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m84 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_48
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_1 [36mshape[0m: [2, 32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_48_output_0 [36mshape[0m: [32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_1 [34mshape[0m: (2, None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_46/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_46/GatherV2:0 [34mshape[0m: (None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m85 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_49
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_1 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_49_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_1 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_47/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_47/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m86 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_50
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_1 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_50_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_1 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_48/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_48/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m87 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_87
+[32mINFO:[0m [36m input_name.1[0m: cached_len_2 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_87_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_2 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_49/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_49/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m88 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_88
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_2 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_88_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_2 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_50/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_50/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m89 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_89
+[32mINFO:[0m [36m input_name.1[0m: cached_key_2 [36mshape[0m: [2, 16, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_89_output_0 [36mshape[0m: [16, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_2 [34mshape[0m: (2, None, 192, 16) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_51/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_51/GatherV2:0 [34mshape[0m: (None, 192, 16) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m90 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_90
+[32mINFO:[0m [36m input_name.1[0m: cached_val_2 [36mshape[0m: [2, 16, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_90_output_0 [36mshape[0m: [16, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_2 [34mshape[0m: (2, None, 96, 16) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_52/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_52/GatherV2:0 [34mshape[0m: (None, 96, 16) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m91 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_91
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_2 [36mshape[0m: [2, 16, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_91_output_0 [36mshape[0m: [16, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_2 [34mshape[0m: (2, None, 96, 16) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_53/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_53/GatherV2:0 [34mshape[0m: (None, 96, 16) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m92 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_92
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_2 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_92_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_2 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_54/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_54/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m93 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_93
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_2 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_93_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_2 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_55/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_55/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m94 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_130
+[32mINFO:[0m [36m input_name.1[0m: cached_len_3 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_130_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_3 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_56/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_56/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m95 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_131
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_3 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_131_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_3 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_57/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_57/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m96 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_132
+[32mINFO:[0m [36m input_name.1[0m: cached_key_3 [36mshape[0m: [2, 8, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_132_output_0 [36mshape[0m: [8, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_3 [34mshape[0m: (2, None, 192, 8) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_58/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_58/GatherV2:0 [34mshape[0m: (None, 192, 8) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m97 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_133
+[32mINFO:[0m [36m input_name.1[0m: cached_val_3 [36mshape[0m: [2, 8, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_133_output_0 [36mshape[0m: [8, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_3 [34mshape[0m: (2, None, 96, 8) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_59/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_59/GatherV2:0 [34mshape[0m: (None, 96, 8) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m98 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_134
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_3 [36mshape[0m: [2, 8, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_134_output_0 [36mshape[0m: [8, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_3 [34mshape[0m: (2, None, 96, 8) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_60/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_60/GatherV2:0 [34mshape[0m: (None, 96, 8) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m99 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_135
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_3 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_135_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_3 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_61/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_61/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m100 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_136
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_3 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_136_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_3 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_62/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_62/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m101 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_173
+[32mINFO:[0m [36m input_name.1[0m: cached_len_4 [36mshape[0m: [2, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_173_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_len_4 [34mshape[0m: (2, None) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_63/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_63/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m102 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_174
+[32mINFO:[0m [36m input_name.1[0m: cached_avg_4 [36mshape[0m: [2, 'N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_174_output_0 [36mshape[0m: ['N', 256] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_avg_4 [34mshape[0m: (2, 256, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_64/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_64/GatherV2:0 [34mshape[0m: (256, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m103 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_175
+[32mINFO:[0m [36m input_name.1[0m: cached_key_4 [36mshape[0m: [2, 32, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_175_output_0 [36mshape[0m: [32, 'N', 192] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_key_4 [34mshape[0m: (2, None, 192, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_65/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_65/GatherV2:0 [34mshape[0m: (None, 192, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m104 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_176
+[32mINFO:[0m [36m input_name.1[0m: cached_val_4 [36mshape[0m: [2, 32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_176_output_0 [36mshape[0m: [32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val_4 [34mshape[0m: (2, None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_66/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_66/GatherV2:0 [34mshape[0m: (None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m105 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_177
+[32mINFO:[0m [36m input_name.1[0m: cached_val2_4 [36mshape[0m: [2, 32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_177_output_0 [36mshape[0m: [32, 'N', 96] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_val2_4 [34mshape[0m: (2, None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_67/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_67/GatherV2:0 [34mshape[0m: (None, 96, 32) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m106 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_178
+[32mINFO:[0m [36m input_name.1[0m: cached_conv1_4 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_178_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv1_4 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_68/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_68/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m107 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /Gather_179
+[32mINFO:[0m [36m input_name.1[0m: cached_conv2_4 [36mshape[0m: [2, 'N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_2_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Gather_179_output_0 [36mshape[0m: ['N', 256, 30] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mname[0m: cached_conv2_4 [34mshape[0m: (2, 256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add_69/AddV2:0 [34mshape[0m: () [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather_69/GatherV2:0 [34mshape[0m: (256, 30, None) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m108 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_34
+[32mINFO:[0m [36m input_name.1[0m: /Gather_22_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_1_output_0 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_34_output_0 [36mshape[0m: ['N', 1] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [-1, 1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_1/Reshape:0 [34mshape[0m: (None, 1) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m109 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_37
+[32mINFO:[0m [36m input_name.1[0m: /Gather_22_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: onnx::Unsqueeze_434 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_37_output_0 [36mshape[0m: [1, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [1, -1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_2/Reshape:0 [34mshape[0m: (1, None) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m110 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Add[35m onnx_op_name[0m: /Add_22
+[32mINFO:[0m [36m input_name.1[0m: /Gather_22_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: _v_7285 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Add_22_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: add
+[32mINFO:[0m [34m input.1.x[0m: [34mname[0m: tf.compat.v1.gather/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.y[0m: [34mshape[0m: () [34mdtype[0m: int64 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.math.add/Add:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m111 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_116
+[32mINFO:[0m [36m input_name.1[0m: /Gather_65_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_1_output_0 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_116_output_0 [36mshape[0m: ['N', 1] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather_7/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [-1, 1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_3/Reshape:0 [34mshape[0m: (None, 1) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m112 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_119
+[32mINFO:[0m [36m input_name.1[0m: /Gather_65_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: onnx::Unsqueeze_434 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_119_output_0 [36mshape[0m: [1, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather_7/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [1, -1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_4/Reshape:0 [34mshape[0m: (1, None) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m113 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Add[35m onnx_op_name[0m: /Add_58
+[32mINFO:[0m [36m input_name.1[0m: /Gather_65_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /Constant_48_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Add_58_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: add
+[32mINFO:[0m [34m input.1.x[0m: [34mname[0m: tf.compat.v1.gather_7/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.y[0m: [34mshape[0m: () [34mdtype[0m: int64 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.math.add_1/Add:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m114 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_199
+[32mINFO:[0m [36m input_name.1[0m: /Gather_108_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_1_output_0 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_199_output_0 [36mshape[0m: ['N', 1] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather_14/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [-1, 1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_5/Reshape:0 [34mshape[0m: (None, 1) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m115 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_202
+[32mINFO:[0m [36m input_name.1[0m: /Gather_108_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: onnx::Unsqueeze_434 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_202_output_0 [36mshape[0m: [1, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather_14/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [1, -1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_6/Reshape:0 [34mshape[0m: (1, None) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m116 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Add[35m onnx_op_name[0m: /Add_94
+[32mINFO:[0m [36m input_name.1[0m: /Gather_108_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /downsample_1/Constant_3_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Add_94_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: add
+[32mINFO:[0m [34m input.1.x[0m: [34mname[0m: tf.compat.v1.gather_14/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.y[0m: [34mshape[0m: () [34mdtype[0m: int64 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.math.add_2/Add:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m117 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_282
+[32mINFO:[0m [36m input_name.1[0m: /Gather_151_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_1_output_0 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_282_output_0 [36mshape[0m: ['N', 1] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather_21/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [-1, 1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_7/Reshape:0 [34mshape[0m: (None, 1) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m118 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_285
+[32mINFO:[0m [36m input_name.1[0m: /Gather_151_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: onnx::Unsqueeze_434 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_285_output_0 [36mshape[0m: [1, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather_21/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [1, -1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_8/Reshape:0 [34mshape[0m: (1, None) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m119 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Add[35m onnx_op_name[0m: /Add_130
+[32mINFO:[0m [36m input_name.1[0m: /Gather_151_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /Constant_57_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Add_130_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: add
+[32mINFO:[0m [34m input.1.x[0m: [34mname[0m: tf.compat.v1.gather_21/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.y[0m: [34mshape[0m: () [34mdtype[0m: int64 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.math.add_3/Add:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m120 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_365
+[32mINFO:[0m [36m input_name.1[0m: /Gather_194_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /encoder_embed/Constant_1_output_0 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_365_output_0 [36mshape[0m: ['N', 1] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather_28/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [-1, 1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_9/Reshape:0 [34mshape[0m: (None, 1) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m121 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Unsqueeze[35m onnx_op_name[0m: /Unsqueeze_368
+[32mINFO:[0m [36m input_name.1[0m: /Gather_194_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: onnx::Unsqueeze_434 [36mshape[0m: [1] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Unsqueeze_368_output_0 [36mshape[0m: [1, 'N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: reshape
+[32mINFO:[0m [34m input.1.tensor[0m: [34mname[0m: tf.compat.v1.gather_28/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.shape[0m: [34mval[0m: [1, -1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.reshape_10/Reshape:0 [34mshape[0m: (1, None) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m122 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Add[35m onnx_op_name[0m: /Add_166
+[32mINFO:[0m [36m input_name.1[0m: /Gather_194_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [36m input_name.2[0m: /Constant_48_output_0 [36mshape[0m: [] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /Add_166_output_0 [36mshape[0m: ['N'] [36mdtype[0m: int64
+[32mINFO:[0m [35mtf_op_type[0m: add
+[32mINFO:[0m [34m input.1.x[0m: [34mname[0m: tf.compat.v1.gather_28/GatherV2:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.2.y[0m: [34mshape[0m: () [34mdtype[0m: int64 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.math.add_4/Add:0 [34mshape[0m: (None,) [34mdtype[0m: <dtype: 'int64'> 
+
+[32mINFO:[0m [32m123 / 1581[0m
+[32mINFO:[0m [35monnx_op_type[0m: Conv[35m onnx_op_name[0m: /encoder_embed/conv/conv.0/Conv
+[32mINFO:[0m [36m input_name.1[0m: /encoder_embed/Unsqueeze_output_0 [36mshape[0m: ['N', 1, 39, 80] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: encoder.encoder_embed.conv.0.weight [36mshape[0m: [8, 1, 3, 3] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.3[0m: encoder.encoder_embed.conv.0.bias [36mshape[0m: [8] [36mdtype[0m: float32
+[32mINFO:[0m [36m output_name.1[0m: /encoder_embed/conv/conv.0/Conv_output_0 [36mshape[0m: ['N', 8, 37, 80] [36mdtype[0m: float32
+[31mERROR:[0m The trace log is below.
+Traceback (most recent call last):
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 478, in print_wrapper_func
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 552, in inverted_operation_enable_disable_wrapper_func
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 219, in get_replacement_parameter_wrapper_func
+    func(*args, **kwargs)
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/ops/Conv.py", line 508, in make_node
+    conv_bias(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/ops/Conv.py", line 318, in conv_bias
+    tf.nn.convolution(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tensorflow/python/util/traceback_utils.py", line 167, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tf_keras/src/layers/core/tf_op_layer.py", line 119, in handle
+    return TFOpLambda(op)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tf_keras/src/utils/traceback_utils.py", line 72, in error_handler
+    del filtered_tb
+        ^^^^^^^^^^^
+ValueError: Exception encountered when calling layer "tf.nn.convolution" (type TFOpLambda).
+
+Depth of output (8) is not a multiple of the number of groups (39) for '{{node tf.nn.convolution/convolution}} = Conv2D[T=DT_FLOAT, data_format="NHWC", dilations=[1, 1, 1, 1], explicit_paddings=[], padding="VALID", strides=[1, 1, 1, 1], use_cudnn_on_gpu=true](Placeholder, tf.nn.convolution/convolution/filter)' with input shapes: [1,1,82,39], [3,3,1,8].
+
+Call arguments received by layer "tf.nn.convolution" (type TFOpLambda):
+  • input=tf.Tensor(shape=(1, 1, 82, 39), dtype=float32)
+  • filters=tf.Tensor(shape=(3, 3, 1, 8), dtype=float32)
+  • strides=['1', '1']
+  • padding='VALID'
+  • data_format=None
+  • dilations=['1', '1']
+  • name=None
+
+[31mERROR:[0m input_onnx_file_path: model_onnx/encoder-epoch-99-avg-1.onnx
+[31mERROR:[0m onnx_op_name: wa/encoder_embed/conv/conv.0/Conv
+[31mERROR:[0m Read this and deal with it. https://github.com/PINTO0309/onnx2tf#parameter-replacement
+[31mERROR:[0m Alternatively, if the input OP has a dynamic dimension, use the -sh or -b or -ois option to rewrite it to a static shape and try again.
+[31mERROR:[0m If the input OP of ONNX before conversion is NHWC or an irregular channel arrangement other than NCHW, use the -kt or -kat option.
+[31mERROR:[0m Also, for models that include NonMaxSuppression in the post-processing, try the -onwdt option.
+[33mWARNING:[0m Conversion failed. Automatic JSON generation on error is disabled by default.
+Re-run with --auto_generate_json_on_error or provide a parameter replacement JSON file.
+Traceback (most recent call last):
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/bin/onnx2tf", line 12, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/__init__.py", line 21, in main
+    return _main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 9032, in main
+    model = convert(
+            ^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 6870, in convert
+    raise ex
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 6775, in convert
+    op.make_node(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 478, in print_wrapper_func
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 552, in inverted_operation_enable_disable_wrapper_func
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 219, in get_replacement_parameter_wrapper_func
+    func(*args, **kwargs)
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/ops/Conv.py", line 508, in make_node
+    conv_bias(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/ops/Conv.py", line 318, in conv_bias
+    tf.nn.convolution(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tensorflow/python/util/traceback_utils.py", line 167, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tf_keras/src/layers/core/tf_op_layer.py", line 119, in handle
+    return TFOpLambda(op)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tf_keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+        ^^^^^^^^^^^
+ValueError: Exception encountered when calling layer "tf.nn.convolution" (type TFOpLambda).
+
+Depth of output (8) is not a multiple of the number of groups (39) for '{{node tf.nn.convolution/convolution}} = Conv2D[T=DT_FLOAT, data_format="NHWC", dilations=[1, 1, 1, 1], explicit_paddings=[], padding="VALID", strides=[1, 1, 1, 1], use_cudnn_on_gpu=true](Placeholder, tf.nn.convolution/convolution/filter)' with input shapes: [1,1,82,39], [3,3,1,8].
+
+Call arguments received by layer "tf.nn.convolution" (type TFOpLambda):
+  • input=tf.Tensor(shape=(1, 1, 82, 39), dtype=float32)
+  • filters=tf.Tensor(shape=(3, 3, 1, 8), dtype=float32)
+  • strides=['1', '1']
+  • padding='VALID'
+  • data_format=None
+  • dilations=['1', '1']
+  • name=None

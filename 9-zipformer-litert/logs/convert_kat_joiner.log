@@ -1,0 +1,54 @@
+
+[07mModel optimizing started[0m ============================================================
+Simplifying...
+Finish! Here is the difference:
+┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃            ┃ Original Model ┃ Simplified Model ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ Add        │ 1              │ 1                │
+│ Constant   │ 2              │ 2                │
+│ Gemm       │ 1              │ 1                │
+│ Tanh       │ 1              │ 1                │
+│ Model Size │ 1002.4KiB      │ 1002.4KiB        │
+└────────────┴────────────────┴──────────────────┘
+
+Simplifying...
+Finish! Here is the difference:
+┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃            ┃ Original Model ┃ Simplified Model ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ Add        │ 1              │ 1                │
+│ Constant   │ 2              │ 2                │
+│ Gemm       │ 1              │ 1                │
+│ Tanh       │ 1              │ 1                │
+│ Model Size │ 1002.4KiB      │ 1002.4KiB        │
+└────────────┴────────────────┴──────────────────┘
+
+Simplifying...
+Finish! Here is the difference:
+┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃            ┃ Original Model ┃ Simplified Model ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ Add        │ 1              │ 1                │
+│ Constant   │ 2              │ 2                │
+│ Gemm       │ 1              │ 1                │
+│ Tanh       │ 1              │ 1                │
+│ Model Size │ 1002.4KiB      │ 1002.4KiB        │
+└────────────┴────────────────┴──────────────────┘
+
+[32mModel optimizing complete![0m
+
+[07mAutomatic generation of each OP name started[0m ========================================
+[32mAutomatic generation of each OP name complete![0m
+
+[07mModel loaded[0m ========================================================================
+
+[07mflatbuffer_direct fast path started[0m ===============================================
+flatbuffer_direct lowering:   0%|          | 0/3 [00:00<?, ?it/s]flatbuffer_direct lowering:   0%|          | 0/3 [00:00<?, ?it/s]flatbuffer_direct lowering:   0%|          | 0/3 [00:00<?, ?it/s, |]flatbuffer_direct lowering: 100%|██████████| 3/3 [00:00<00:00, 3389.79it/s]flatbuffer_direct lowering: 100%|██████████| 3/3 [00:00<00:00, 3125.41it/s]
+flatbuffer_direct post-lowering:   0%|          | 0/6 [00:00<?, ?it/s]flatbuffer_direct post-lowering:   0%|          | 0/6 [00:00<?, ?it/s]flatbuffer_direct post-lowering:   0%|          | 0/6 [00:00<?, ?it/s, |]flatbuffer_direct post-lowering [1/6] outputs:   0%|          | 0/6 [00:00<?, ?it/s, |]flatbuffer_direct post-lowering [1/6] outputs:   0%|          | 0/6 [00:00<?, ?it/s]   flatbuffer_direct post-lowering [1/6] outputs:  17%|█▋        | 1/6 [00:00<00:00, 1685.81it/s]flatbuffer_direct post-lowering [1/6] outputs:  17%|█▋        | 1/6 [00:00<00:00, 1555.17it/s, |]flatbuffer_direct post-lowering [2/6] layout optimize pass-set 1:  17%|█▋        | 1/6 [00:00<00:00, 1371.58it/s, |]flatbuffer_direct post-lowering [2/6] layout optimize pass-set 1:  17%|█▋        | 1/6 [00:00<00:00, 201.25it/s]    flatbuffer_direct post-lowering [2/6] layout optimize pass-set 1:  33%|███▎      | 2/6 [00:00<00:00, 395.26it/s]flatbuffer_direct post-lowering [2/6] layout optimize pass-set 1:  33%|███▎      | 2/6 [00:00<00:00, 391.92it/s, |]flatbuffer_direct post-lowering [3/6] core cleanup passes:  33%|███▎      | 2/6 [00:00<00:00, 384.09it/s, |]       flatbuffer_direct post-lowering [3/6] core cleanup passes:  33%|███▎      | 2/6 [00:00<00:00, 363.03it/s]   flatbuffer_direct post-lowering [3/6] core cleanup passes:  50%|█████     | 3/6 [00:00<00:00, 540.64it/s]flatbuffer_direct post-lowering [3/6] core cleanup passes:  50%|█████     | 3/6 [00:00<00:00, 537.34it/s, |]flatbuffer_direct post-lowering [4/6] layout recovery pass-set 2:  50%|█████     | 3/6 [00:00<00:00, 531.26it/s, |]flatbuffer_direct post-lowering [4/6] layout recovery pass-set 2:  50%|█████     | 3/6 [00:00<00:00, 409.45it/s]   flatbuffer_direct post-lowering [4/6] layout recovery pass-set 2:  67%|██████▋   | 4/6 [00:00<00:00, 541.86it/s]flatbuffer_direct post-lowering [4/6] layout recovery pass-set 2:  67%|██████▋   | 4/6 [00:00<00:00, 539.15it/s, |]flatbuffer_direct post-lowering [5/6] terminal cleanup passes:  67%|██████▋   | 4/6 [00:00<00:00, 526.94it/s, |]   flatbuffer_direct post-lowering [5/6] terminal cleanup passes:  67%|██████▋   | 4/6 [00:00<00:00, 362.22it/s]   flatbuffer_direct post-lowering [5/6] terminal cleanup passes:  83%|████████▎ | 5/6 [00:00<00:00, 435.76it/s]flatbuffer_direct post-lowering [5/6] terminal cleanup passes:  83%|████████▎ | 5/6 [00:00<00:00, 433.83it/s, |]flatbuffer_direct post-lowering [6/6] topological sort:  83%|████████▎ | 5/6 [00:00<00:00, 429.08it/s, |]       flatbuffer_direct post-lowering [6/6] topological sort:  83%|████████▎ | 5/6 [00:00<00:00, 411.01it/s]   flatbuffer_direct post-lowering [6/6] topological sort: 100%|██████████| 6/6 [00:00<00:00, 490.84it/s]flatbuffer_direct post-lowering [6/6] topological sort: 100%|██████████| 6/6 [00:00<00:00, 488.69it/s]
+flatbuffer_direct export:   0%|          | 0/3 [00:00<?, ?it/s]flatbuffer_direct export:   0%|          | 0/3 [00:00<?, ?it/s]flatbuffer_direct export:   0%|          | 0/3 [00:00<?, ?it/s, |]flatbuffer_direct export [1/3] tensor correspondence report:   0%|          | 0/3 [00:00<?, ?it/s, |]flatbuffer_direct export [1/3] tensor correspondence report:   0%|          | 0/3 [00:00<?, ?it/s]   flatbuffer_direct export [1/3] tensor correspondence report:  33%|███▎      | 1/3 [00:00<00:00, 1324.38it/s]flatbuffer_direct export [1/3] tensor correspondence report:  33%|███▎      | 1/3 [00:00<00:00, 1251.28it/s, |]flatbuffer_direct export [2/3] write float32 tflite:  33%|███▎      | 1/3 [00:00<00:00, 1136.36it/s, |]                                                                                                               flatbuffer_direct export [2/3] write float32 tflite:  33%|███▎      | 1/3 [00:00<00:00, 293.35it/s, |]flatbuffer_direct export [2/3] write float32 tflite:  33%|███▎      | 1/3 [00:00<00:00, 286.52it/s]   flatbuffer_direct export [2/3] write float32 tflite:  67%|██████▋   | 2/3 [00:00<00:00, 559.24it/s]flatbuffer_direct export [2/3] write float32 tflite:  67%|██████▋   | 2/3 [00:00<00:00, 551.08it/s, |]flatbuffer_direct export [3/3] write float16 tflite:  67%|██████▋   | 2/3 [00:00<00:00, 536.18it/s, |]                                                                                                      flatbuffer_direct export [3/3] write float16 tflite:  67%|██████▋   | 2/3 [00:00<00:00, 316.30it/s, |]flatbuffer_direct export [3/3] write float16 tflite:  67%|██████▋   | 2/3 [00:00<00:00, 312.80it/s]   flatbuffer_direct export [3/3] write float16 tflite: 100%|██████████| 3/3 [00:00<00:00, 465.26it/s]flatbuffer_direct export [3/3] write float16 tflite: 100%|██████████| 3/3 [00:00<00:00, 462.11it/s]
+flatbuffer_direct write timing: stage=float32 mode=builder_direct total=0.002s serialize=0.001s (sanitize=0.000s build=0.000s pack=0.001s output=0.000s) write=0.001s size=0.98MB
+flatbuffer_direct write timing: stage=float16 mode=builder_direct total=0.002s serialize=0.001s (sanitize=0.000s build=0.000s pack=0.001s output=0.000s) write=0.001s size=0.49MB
+[32mFloat32 tflite output complete! (out_kat/joiner/joiner-epoch-99-avg-1_float32.tflite)[0m
+[32mFloat16 tflite output complete! (out_kat/joiner/joiner-epoch-99-avg-1_float16.tflite)[0m
+[32mTensor correspondence report output complete! (out_kat/joiner/joiner-epoch-99-avg-1_tensor_correspondence_report.json)[0m

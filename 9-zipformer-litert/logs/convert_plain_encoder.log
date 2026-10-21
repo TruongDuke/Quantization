@@ -1,0 +1,70 @@
+
+[07mModel optimizing started[0m ============================================================
+Traceback (most recent call last):
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 5032, in convert
+    result = _run_onnxsim_inplace_safely(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 700, in _run_onnxsim_inplace_safely
+    result = subprocess.check_output(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'onnxsim'
+
+[33mWARNING:[0m Failed to optimize the onnx file.
+
+[07mAutomatic generation of each OP name started[0m ========================================
+[32mAutomatic generation of each OP name complete![0m
+
+[07mModel loaded[0m ========================================================================
+
+[07mflatbuffer_direct fast path started[0m ===============================================
+flatbuffer_direct lowering:   0%|          | 0/4046 [00:00<?, ?it/s]flatbuffer_direct lowering:   0%|          | 0/4046 [00:00<?, ?it/s]flatbuffer_direct lowering:   0%|          | 0/4046 [00:00<?, ?it/s, |]flatbuffer_direct lowering:  42%|████▏     | 1701/4046 [00:00<00:00, 25189.10it/s]flatbuffer_direct lowering:  42%|████▏     | 1701/4046 [00:00<00:00, 25140.02it/s]
+flatbuffer_direct lowering:   0%|          | 0/4046 [00:00<?, ?it/s]flatbuffer_direct lowering:   0%|          | 0/4046 [00:00<?, ?it/s]flatbuffer_direct lowering:   0%|          | 0/4046 [00:00<?, ?it/s, |]flatbuffer_direct lowering:  44%|████▍     | 1785/4046 [00:00<00:00, 46868.57it/s]flatbuffer_direct lowering:  44%|████▍     | 1785/4046 [00:00<00:00, 46721.16it/s]
+Traceback (most recent call last):
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 6433, in convert
+    direct_outputs = _run_flatbuffer_direct_export(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 6187, in _run_flatbuffer_direct_export
+    raise direct_error
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 6078, in _run_flatbuffer_direct_export
+    direct_outputs = export_tflite_model_flatbuffer_direct(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/tflite_builder/__init__.py", line 518, in export_tflite_model_flatbuffer_direct
+    model_ir = lower_onnx_to_ir(
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/tflite_builder/lower_from_onnx2tf.py", line 3875, in lower_onnx_to_ir
+    dispatch_node(wrapped, ctx)
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/tflite_builder/dispatcher.py", line 13, in dispatch_node
+    _LOWERING_REGISTRY.lower(node, ctx)
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/tflite_builder/core/lowering_registry.py", line 35, in lower
+    resolution.entry.builder(node, context)
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/tflite_builder/op_builders/index.py", line 5388, in build_gather_elements_op
+    if int(output_signature[axis]) < 0:
+           ~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/bin/onnx2tf", line 12, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/__init__.py", line 21, in main
+    return _main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 9032, in main
+    model = convert(
+            ^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 6453, in convert
+    raise RuntimeError(
+RuntimeError: flatbuffer_direct fast path failed.
+exit 1

@@ -1,0 +1,149 @@
+
+[07mModel optimizing started[0m ============================================================
+Simplifying...
+Finish! Here is the difference:
+┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃            ┃ Original Model ┃ Simplified Model ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ Constant   │ 5              │ 5                │
+│ Conv       │ 1              │ 1                │
+│ Gather     │ 1              │ 1                │
+│ Gemm       │ 1              │ 1                │
+│ Relu       │ 1              │ 1                │
+│ Squeeze    │ 1              │ 1                │
+│ Transpose  │ 2              │ 2                │
+│ Model Size │ 2.0MiB         │ 2.0MiB           │
+└────────────┴────────────────┴──────────────────┘
+
+Simplifying...
+Finish! Here is the difference:
+┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃            ┃ Original Model ┃ Simplified Model ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ Constant   │ 5              │ 5                │
+│ Conv       │ 1              │ 1                │
+│ Gather     │ 1              │ 1                │
+│ Gemm       │ 1              │ 1                │
+│ Relu       │ 1              │ 1                │
+│ Squeeze    │ 1              │ 1                │
+│ Transpose  │ 2              │ 2                │
+│ Model Size │ 2.0MiB         │ 2.0MiB           │
+└────────────┴────────────────┴──────────────────┘
+
+Simplifying...
+Finish! Here is the difference:
+┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━┓
+┃            ┃ Original Model ┃ Simplified Model ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━┩
+│ Constant   │ 5              │ 5                │
+│ Conv       │ 1              │ 1                │
+│ Gather     │ 1              │ 1                │
+│ Gemm       │ 1              │ 1                │
+│ Relu       │ 1              │ 1                │
+│ Squeeze    │ 1              │ 1                │
+│ Transpose  │ 2              │ 2                │
+│ Model Size │ 2.0MiB         │ 2.0MiB           │
+└────────────┴────────────────┴──────────────────┘
+
+[32mModel optimizing complete![0m
+
+[07mAutomatic generation of each OP name started[0m ========================================
+[32mAutomatic generation of each OP name complete![0m
+
+[07mModel loaded[0m ========================================================================
+
+[07mModel conversion started[0m ============================================================
+[32mINFO:[0m [32minput_op_name[0m: y [32mshape[0m: ['N', 2] [32mdtype[0m: int64
+[33mWARNING:[0m The optimization process for shape estimation is skipped because it contains OPs that cannot be inferred by the standard onnxruntime.
+[33mWARNING:[0m onnxruntime output memmap requires static output shapes. Provide --shape_hints or reduce validation outputs.
+
+[32mINFO:[0m [32m2 / 8[0m
+[32mINFO:[0m [35monnx_op_type[0m: Gather[35m onnx_op_name[0m: /decoder/embedding/Gather
+[32mINFO:[0m [36m input_name.1[0m: decoder.embedding.weight [36mshape[0m: [500, 512] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: y [36mshape[0m: ['N', 2] [36mdtype[0m: int64
+[32mINFO:[0m [36m output_name.1[0m: /decoder/embedding/Gather_output_0 [36mshape[0m: ['N', 2, 512] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: gather_v2
+[32mINFO:[0m [34m input.1.params[0m: [34mshape[0m: (500, 512) [34mdtype[0m: float32 
+[32mINFO:[0m [34m input.2.indices[0m: [34mname[0m: tf.__operators__.add/AddV2:0 [34mshape[0m: (1, 2) [34mdtype[0m: <dtype: 'int64'> 
+[32mINFO:[0m [34m input.3.axis[0m: [34mval[0m: 0 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.gather/GatherV2:0 [34mshape[0m: (1, 2, 512) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m3 / 8[0m
+[32mINFO:[0m [35monnx_op_type[0m: Transpose[35m onnx_op_name[0m: /decoder/Transpose
+[32mINFO:[0m [36m input_name.1[0m: /decoder/embedding/Gather_output_0 [36mshape[0m: ['N', 2, 512] [36mdtype[0m: float32
+[32mINFO:[0m [36m output_name.1[0m: /decoder/Transpose_output_0 [36mshape[0m: ['N', 512, 2] [36mdtype[0m: float32
+[32mINFO:[0m [35mtf_op_type[0m: transpose_v2
+[32mINFO:[0m [34m input.1.a[0m: [34mname[0m: tf.compat.v1.gather/GatherV2:0 [34mshape[0m: (1, 2, 512) [34mdtype[0m: <dtype: 'float32'> 
+[32mINFO:[0m [34m input.2.perm[0m: [34mval[0m: [0, 2, 1] 
+[32mINFO:[0m [34m output.1.output[0m: [34mname[0m: tf.compat.v1.transpose/transpose:0 [34mshape[0m: (1, 512, 2) [34mdtype[0m: <dtype: 'float32'> 
+
+[32mINFO:[0m [32m4 / 8[0m
+[32mINFO:[0m [35monnx_op_type[0m: Conv[35m onnx_op_name[0m: /decoder/conv/Conv
+[32mINFO:[0m [36m input_name.1[0m: /decoder/Transpose_output_0 [36mshape[0m: ['N', 512, 2] [36mdtype[0m: float32
+[32mINFO:[0m [36m input_name.2[0m: decoder.conv.weight [36mshape[0m: [512, 4, 2] [36mdtype[0m: float32
+[32mINFO:[0m [36m output_name.1[0m: /decoder/conv/Conv_output_0 [36mshape[0m: ['N', 512, 1] [36mdtype[0m: float32
+[31mERROR:[0m The trace log is below.
+Traceback (most recent call last):
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 478, in print_wrapper_func
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 552, in inverted_operation_enable_disable_wrapper_func
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 219, in get_replacement_parameter_wrapper_func
+    func(*args, **kwargs)
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/ops/Conv.py", line 620, in make_node
+    group_conv1d_nobias(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/ops/Conv.py", line 427, in group_conv1d_nobias
+    Conv1D(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1036, in __call__
+    self._maybe_build(inputs)
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tensorflow/python/keras/engine/base_layer.py", line 2655, in _maybe_build
+    self.build(input_shapes)  # pylint:disable=not-callable
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tensorflow/python/keras/layers/convolutional.py", line 194, in build
+    raise ValueError(
+ValueError: The number of input channels must be evenly divisible by the number of groups. Received groups=128, but the input has 2 channels (full input shape is (1, 512, 2)).
+
+[31mERROR:[0m input_onnx_file_path: model_onnx/decoder-epoch-99-avg-1.onnx
+[31mERROR:[0m onnx_op_name: wa/decoder/conv/Conv
+[31mERROR:[0m Read this and deal with it. https://github.com/PINTO0309/onnx2tf#parameter-replacement
+[31mERROR:[0m Alternatively, if the input OP has a dynamic dimension, use the -sh or -b or -ois option to rewrite it to a static shape and try again.
+[31mERROR:[0m If the input OP of ONNX before conversion is NHWC or an irregular channel arrangement other than NCHW, use the -kt or -kat option.
+[31mERROR:[0m Also, for models that include NonMaxSuppression in the post-processing, try the -onwdt option.
+[33mWARNING:[0m Conversion failed. Automatic JSON generation on error is disabled by default.
+Re-run with --auto_generate_json_on_error or provide a parameter replacement JSON file.
+Traceback (most recent call last):
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/bin/onnx2tf", line 12, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/__init__.py", line 21, in main
+    return _main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 9032, in main
+    model = convert(
+            ^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 6870, in convert
+    raise ex
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/onnx2tf.py", line 6775, in convert
+    op.make_node(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 478, in print_wrapper_func
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 552, in inverted_operation_enable_disable_wrapper_func
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/utils/common_functions.py", line 219, in get_replacement_parameter_wrapper_func
+    func(*args, **kwargs)
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/ops/Conv.py", line 620, in make_node
+    group_conv1d_nobias(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/onnx2tf/ops/Conv.py", line 427, in group_conv1d_nobias
+    Conv1D(
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1036, in __call__
+    self._maybe_build(inputs)
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tensorflow/python/keras/engine/base_layer.py", line 2655, in _maybe_build
+    self.build(input_shapes)  # pylint:disable=not-callable
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/duc/Neural Network Quantization/9-zipformer-litert/.venv-zf/lib/python3.12/site-packages/tensorflow/python/keras/layers/convolutional.py", line 194, in build
+    raise ValueError(
+ValueError: The number of input channels must be evenly divisible by the number of groups. Received groups=128, but the input has 2 channels (full input shape is (1, 512, 2)).
